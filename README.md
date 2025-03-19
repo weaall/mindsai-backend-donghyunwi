@@ -1,6 +1,8 @@
 # 마인즈에이아이 백엔드 과제 테스트
 
 NestJS 기반 사용자관련련 백엔드 서비스
+Swagger 외 API문서는 
+https://weaall.github.io/dev/mindsAI를 참고 부탁드립니다.
 
 ## 목차
 
@@ -11,6 +13,7 @@ NestJS 기반 사용자관련련 백엔드 서비스
 - [docker](#docker)
 - [구조](#구조)
 - [구현](#구현)
+- [API](#API)
 - [검증-Postman](#검증-Postman)
 
 ## 기술스텍
@@ -123,6 +126,9 @@ mindeai-backend-donghyunwi/
 - ✅ **환경 변수 관리**: 중요한 설정 값은 환경 변수를 사용하여 관리
 - ✅ **테스트 코드**: Jest 활용
 
+## API
+
+https://weaall.github.io/dev/mindsAI
 
 ## 검증-Postman
 도커 실행 후 http://localhost:3000/api-docs 에서도 확인 가능합니다.
