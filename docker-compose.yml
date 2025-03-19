@@ -4,26 +4,22 @@ services:
     build: .
     container_name: nest_app
     ports:
-      - "3000:3000"
+      - "${PORT}:${PORT}"
     depends_on:
       - db
-    environment:
-      DATABASE_HOST: db
-      DATABASE_PORT: 3306
-      DATABASE_USER: user
-      DATABASE_PASSWORD: userpassword
-      DATABASE_NAME: userdb
+    env_file:
+      - .env
 
   db:
     image: mysql:8
     container_name: user_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: userdb
-      MYSQL_USER: user
-      MYSQL_PASSWORD: userpassword
+      MYSQL_DATABASE: ${DB_DATABASE} 
+      MYSQL_USER: ${DB_USERNAME}      
+      MYSQL_PASSWORD: ${DB_PASSWORD}  
     ports:
-      - "3306:3306"
+      - "${DB_PORT}:${DB_PORT}" 
     volumes:
       - db_data:/var/lib/mysql
 
