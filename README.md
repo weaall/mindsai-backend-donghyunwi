@@ -1,6 +1,10 @@
 # 마인즈에이아이 백엔드 과제 테스트
 
-NestJS 기반 사용자관련련 백엔드 서비스
+NestJS 기반 사용자관련 백엔드 서비스
+
+테스트 목적이므로 .env는 gitignore에서 제외하였습니다.
+도커에서 실행해주시면 감사하겠습니다.
+
 Swagger 외 API문서는 
 https://weaall.github.io/dev/mindsAI를 참고 부탁드립니다.
 
