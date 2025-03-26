@@ -60,8 +60,8 @@ mindeai-backend-donghyunwi/
 ├── src/
 │   ├── auth/                               # 인증 관련 모듈
 │   │   ├── dto/                            
-│   │   │   ├── login.dto.ts
-│   │   │   └── auth.controller.spec.ts
+│   │   │   └── login.dto.ts
+│   │   ├── auth.controller.spec.ts
 │   │   ├── auth.controller.ts
 │   │   ├── auth.module.ts
 │   │   ├── auth.service.spec.ts
